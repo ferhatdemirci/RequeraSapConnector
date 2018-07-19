@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RequeraSapConnector
 {
-    public class Class1
+    public class RfcMappingException : RqRfcException
     {
+        public RfcMappingException(string message)
+            : base(message)
+        {
+
+        }
     }
 }
