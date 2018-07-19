@@ -1,0 +1,6 @@
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\bin\Debug\RequeraSapConnector.Soap.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\bin\Debug\RequeraSapConnector.Soap.pdb
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\obj\Debug\RequeraSapConnector.Soap.csprojAssemblyReference.cache
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\obj\Debug\RequeraSapConnector.Soap.csproj.CoreCompileInputs.cache
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\obj\Debug\RequeraSapConnector.Soap.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Soap\obj\Debug\RequeraSapConnector.Soap.pdb
