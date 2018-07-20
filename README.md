@@ -85,7 +85,7 @@ Modelleme için yukarıdaki gibi RFC alan isimleri verilebileceği gibi, Class i
 Direk Tablo'yu almak için aşağıdaki örneği kullanınız.
 
 ```C#
-using (SapRfcConnection conn = new PlainSapRfcConnection("FEP"))
+using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
             {
                 ASPxGridView2.DataSource= conn.ReadTable<Muhataplar>("TPART",null,null,0,500);
                 ASPxGridView2.DataBind();               
