@@ -58,7 +58,7 @@
     <Compile Include="RfcStructureFieldAttribute.cs" />
     <Compile Include="RfcStructureMapper.cs" />
     <Compile Include="RfcValueMapper.cs" />
-    <Compile Include="SapRfcConnection.cs" />
+    <Compile Include="SapConnection.cs" />
     <Compile Include="RqRfcCallException.cs" />
     <Compile Include="RqRfcException.cs" />
     <Compile Include="Structure\RfcDbField.cs" />

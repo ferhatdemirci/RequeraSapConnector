@@ -13,9 +13,9 @@ namespace RequeraSapConnector
         private List<string> conditions;
         private int count;
         private int skip;
-        private SapRfcConnection connection;
+        private SapConnection connection;
 
-        public RfcReadTableQueryBuilder(SapRfcConnection connection, string tableName)
+        public RfcReadTableQueryBuilder(SapConnection connection, string tableName)
         {
             this.tableName = tableName;
             this.connection = connection;

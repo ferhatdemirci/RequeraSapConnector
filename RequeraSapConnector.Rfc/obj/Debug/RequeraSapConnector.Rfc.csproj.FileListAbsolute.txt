@@ -1,6 +1,0 @@
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\bin\Debug\RequeraSapConnector.Rfc.dll
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\bin\Debug\RequeraSapConnector.Rfc.pdb
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\obj\Debug\RequeraSapConnector.Rfc.csprojAssemblyReference.cache
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\obj\Debug\RequeraSapConnector.Rfc.csproj.CoreCompileInputs.cache
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\obj\Debug\RequeraSapConnector.Rfc.dll
-C:\Projeler\RequeraSapConnector\RequeraSapConnector.Rfc\obj\Debug\RequeraSapConnector.Rfc.pdb
