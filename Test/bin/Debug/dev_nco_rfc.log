@@ -1,0 +1,175 @@
+
+**** Log file opened by process 22276 at 2018-07-20 11:41:45 (UTC+03:00 Türkiye Standart Saati)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\PROFESSIONAL\COMMON7\IDE\EXTENSIONS\TESTPLATFORM\testhost.x86.exe
+Working directory: C:\Projeler\RequeraSapConnector\Test\bin\Debug
+Operating system:   64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: BDT-KAY-BT-02, IP address: 10.63.50.2, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-20 11:41:45.894 [Thread 20]
+Could not initialize configuration:
+System.ArgumentException: 'sectionGroupName' parametresi geçersiz.
+Parametre adı: sectionGroupName
+   konum: System.Configuration.MgmtConfigurationRecord.GetSectionGroup(String configKey)
+   konum: SAP.Middleware.Connector.RfcConfigParameters.loadConfiguration()
+>> Error entry 2018-07-20 11:41:45.899 [Thread 20]
+SAP.Middleware.Connector.RfcInvalidStateException: Cannot get destination FEP -- no destination configuration registered
+   konum: SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 13720 at 2018-07-20 11:45:03 (UTC+03:00 Türkiye Standart Saati)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\PROFESSIONAL\COMMON7\IDE\EXTENSIONS\TESTPLATFORM\testhost.x86.exe
+Working directory: C:\Projeler\RequeraSapConnector\Test\bin\Debug
+Operating system:   64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: BDT-KAY-BT-02, IP address: 10.63.50.2, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-20 11:45:03.654 [Thread 20]
+Attempt no. 1 to load configuration failed:
+System.Configuration.ConfigurationErrorsException: SAP.Middleware.Connector/GeneralSettings için yapılandırma bölümü işleyicisi oluşturulurken hata oluştu: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi. (C:\Projeler\RequeraSapConnector\Test\bin\Debug\Test.dll.config line 5) ---> System.BadImageFormatException: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi.
+   konum: System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   konum: System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- İç özel durum yığını izlemesinin sonu ---
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   konum: System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   konum: System.Configuration.ConfigurationSectionCollection.Get(String name)
+   konum: SAP.Middleware.Connector.RfcConfigParameters.loadConfiguration()
+>> Error entry 2018-07-20 11:45:03.660 [Thread 20]
+Attempt no. 1 to load configuration failed:
+System.Configuration.ConfigurationErrorsException: SAP.Middleware.Connector/GeneralSettings için yapılandırma bölümü işleyicisi oluşturulurken hata oluştu: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi. (C:\Projeler\RequeraSapConnector\Test\bin\Debug\Test.dll.config line 5) ---> System.BadImageFormatException: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi.
+   konum: System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   konum: System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- İç özel durum yığını izlemesinin sonu ---
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   konum: System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   konum: System.Configuration.ConfigurationSectionCollection.Get(String name)
+   konum: SAP.Middleware.Connector.RfcConfigParameters.loadConfiguration()
+>> Error entry 2018-07-20 11:45:03.665 [Thread 20]
+SAP.Middleware.Connector.RfcInvalidStateException: Cannot get destination FEP -- no destination configuration registered
+   konum: SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 888 at 2018-07-20 11:49:18 (UTC+03:00 Türkiye Standart Saati)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 32-bit .NET Framework 4.0.30319.42000
+Program: C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\PROFESSIONAL\COMMON7\IDE\EXTENSIONS\TESTPLATFORM\testhost.x86.exe
+Working directory: C:\Projeler\RequeraSapConnector\Test\bin\Debug
+Operating system:   64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: BDT-KAY-BT-02, IP address: 10.63.50.2, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-20 11:49:18.579 [Thread 20]
+Attempt no. 1 to load configuration failed:
+System.Configuration.ConfigurationErrorsException: SAP.Middleware.Connector/GeneralSettings için yapılandırma bölümü işleyicisi oluşturulurken hata oluştu: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi. (C:\Projeler\RequeraSapConnector\Test\bin\Debug\Test.dll.config line 5) ---> System.BadImageFormatException: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi.
+   konum: System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   konum: System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- İç özel durum yığını izlemesinin sonu ---
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   konum: System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   konum: System.Configuration.ConfigurationSectionCollection.Get(String name)
+   konum: SAP.Middleware.Connector.RfcConfigParameters.loadConfiguration()
+>> Error entry 2018-07-20 11:49:18.586 [Thread 20]
+Attempt no. 1 to load configuration failed:
+System.Configuration.ConfigurationErrorsException: SAP.Middleware.Connector/GeneralSettings için yapılandırma bölümü işleyicisi oluşturulurken hata oluştu: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi. (C:\Projeler\RequeraSapConnector\Test\bin\Debug\Test.dll.config line 5) ---> System.BadImageFormatException: 'sapnco' dosyasını veya bütünleştirilmiş kodunu ya da bağımlılıklarından birini yükleyemedi. Geçersiz biçimdeki bir program yüklenmek istendi.
+   konum: System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   konum: System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- İç özel durum yığını izlemesinin sonu ---
+   konum: System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   konum: System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   konum: System.Configuration.ConfigurationSectionCollection.Get(String name)
+   konum: SAP.Middleware.Connector.RfcConfigParameters.loadConfiguration()
+>> Error entry 2018-07-20 11:49:18.590 [Thread 20]
+SAP.Middleware.Connector.RfcInvalidStateException: Cannot get destination FEP -- no destination configuration registered
+   konum: SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 21076 at 2018-07-20 13:07:32 (UTC+03:00 Türkiye Standart Saati)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\ferhat.demirci\AppData\Local\Microsoft\VisualStudio\15.0_7d4b2ffb\Extensions\ozfgbgf1.ec0\TestRunner\DevExpress.CodeRush.TestRunner.Executor45x64.exe
+Working directory: C:\Projeler\RequeraSapConnector\Test\bin\Debug
+Operating system: Windows 8 Enterprise 64-bit 
+Processor: 8x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: BDT-KAY-BT-02, IP address: 10.63.50.2, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2018-07-20 13:07:32.227 [Thread 12]
+Failure to create pool for destination FEP (ORIGINAL) [USER=SAP_KullanıcıAdınız PASSWD=******** CLIENT=200 LANG=EN ASHOST=Sap_SunucuBilgisi SYSNR=00 NAME=FEP]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host BDT-KAY-BT-02 with Unicode
+ERROR       hostname 'Sap_SunucuBilgisi' unknown
+TIME        Fri Jul 20 13:07:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'Sap_SunucuBilgisi' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+   konum: SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2018-07-20 13:07:32.230 [Thread 12]
+[USER=SAP_KullanıcıAdınız PASSWD=******** CLIENT=200 LANG=EN ASHOST=Sap_SunucuBilgisi SYSNR=00 NAME=FEP]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host BDT-KAY-BT-02 with Unicode
+ERROR       hostname 'Sap_SunucuBilgisi' unknown
+TIME        Fri Jul 20 13:07:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'Sap_SunucuBilgisi' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+   konum: SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   konum: SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   konum: SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+>> Error entry 2018-07-20 13:07:32.231 [Thread 12]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host BDT-KAY-BT-02 with Unicode
+ERROR       hostname 'Sap_SunucuBilgisi' unknown
+TIME        Fri Jul 20 13:07:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'Sap_SunucuBilgisi' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+   konum: SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   konum: SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   konum: SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   konum: SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+   konum: SAP.Middleware.Connector.RfcDestination.get_SystemAttributes()
+   konum: SAP.Middleware.Connector.RfcRepository.GetRepositoryForDestination(RfcDestination destination)
