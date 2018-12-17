@@ -91,4 +91,4 @@ using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
                 ASPxGridView2.DataBind();               
             }
 ```
-
+https://youtu.be/04F53SUiGw0
