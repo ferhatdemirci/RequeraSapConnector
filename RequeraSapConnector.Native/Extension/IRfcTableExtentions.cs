@@ -34,7 +34,16 @@ namespace RequeraSapConnector.Native.Extension
                     switch (metadata.DataType)
                     {
                         case RfcDataType.DATE:
-                            ldr[metadata.Name] = row.GetString(metadata.Name).Substring(0, 4) + row.GetString(metadata.Name).Substring(5, 2) + row.GetString(metadata.Name).Substring(8, 2);
+                            //ldr[metadata.Name] = row.GetString(metadata.Name).Substring(0, 4) + row.GetString(metadata.Name).Substring(5, 2) + row.GetString(metadata.Name).Substring(8, 2);
+                            if (row.GetString(metadata.Name) != "0000-00-00")
+                            {
+                                ldr[metadata.Name] = row.GetString(metadata.Name).Substring(0, 4) + "-" + row.GetString(metadata.Name).Substring(5, 2) + "-" + row.GetString(metadata.Name).Substring(8, 2);
+                            }
+                            else
+                            {
+                                DateTime dtSonuc = new DateTime(1901, 01, 01);
+                                ldr[metadata.Name] = dtSonuc;
+                            }
                             break;
                         case RfcDataType.BCD:
                             ldr[metadata.Name] = row.GetDecimal(metadata.Name);
@@ -52,7 +61,8 @@ namespace RequeraSapConnector.Native.Extension
                             ldr[metadata.Name] = row.GetInt(metadata.Name);
                             break;
                         case RfcDataType.FLOAT:
-                            ldr[metadata.Name] = row.GetDouble(metadata.Name);
+                            //ldr[metadata.Name] = row.GetDouble(metadata.Name);
+                            ldr[metadata.Name] = metadata.Name.isNumeric() ? row.GetDouble(metadata.Name) : 0;
                             break;
                         default:
                             ldr[metadata.Name] = row.GetString(metadata.Name);
@@ -119,5 +129,13 @@ namespace RequeraSapConnector.Native.Extension
         public string sapfieldtype { get; set; }
         public string sapimporttablename { get; set; }
         public string dynamicValue { get; set; }
+    }
+    public static class ExtensionManager
+    {
+        public static bool isNumeric(this string value)
+        {
+            double oReturn = 0;
+            return double.TryParse(value, out oReturn);
+        }
     }
 }

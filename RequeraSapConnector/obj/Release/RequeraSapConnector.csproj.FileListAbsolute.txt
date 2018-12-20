@@ -1,0 +1,5 @@
+C:\Projeler\RequeraSapConnector\RequeraSapConnector\bin\Release\RequeraSapConnector.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector\bin\Release\RequeraSapConnector.pdb
+C:\Projeler\RequeraSapConnector\RequeraSapConnector\obj\Release\RequeraSapConnector.csproj.CoreCompileInputs.cache
+C:\Projeler\RequeraSapConnector\RequeraSapConnector\obj\Release\RequeraSapConnector.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector\obj\Release\RequeraSapConnector.pdb

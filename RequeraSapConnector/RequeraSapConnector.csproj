@@ -29,6 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -62,6 +63,7 @@
     <Compile Include="SapConnection.cs" />
     <Compile Include="RqRfcCallException.cs" />
     <Compile Include="RqRfcException.cs" />
+    <Compile Include="Structure\DD03L_.cs" />
     <Compile Include="Structure\RfcDbField.cs" />
     <Compile Include="Structure\RfcDbWhere.cs" />
     <Compile Include="Structure\Tab512.cs" />

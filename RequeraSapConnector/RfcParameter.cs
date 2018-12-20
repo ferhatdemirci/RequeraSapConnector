@@ -12,7 +12,7 @@ namespace RequeraSapConnector
 
         public RfcParameter(string name, object value)
         {
-            this.Name = name.ToUpper(new CultureInfo("en-EN", false));
+            this.Name = name;// name.ToUpper(new CultureInfo("en-US", false));
             this.Value = value;
         }
 

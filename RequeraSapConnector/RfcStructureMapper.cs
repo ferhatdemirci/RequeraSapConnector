@@ -2,6 +2,7 @@
 using RequeraSapConnector.Types;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Reflection;
 
 namespace RequeraSapConnector
@@ -73,6 +74,44 @@ namespace RequeraSapConnector
                 entries.Add(entry);
             }
             return entries;
+        }
+        public DataTable FromRfcReadTableToList(IEnumerable<Tab512> table, IEnumerable<RfcDbField> fields)
+        {
+            //Type type = typeof(T);
+            //EnsureTypeIsCached(type);
+            DataTable dt = new DataTable("SapTable");
+            //List<T> entries = new List<T>();
+            foreach (var row in table)
+            {
+                DataRow dr = dt.NewRow();
+                DataColumnCollection columns = dt.Columns;
+                //T entry = Activator.CreateInstance<T>();
+
+                foreach (var field in fields)
+                {
+                    //PropertyInfo property = null;
+                    if (!string.IsNullOrEmpty(field.FieldName.ToLower()))
+                    {
+                        string value = null;
+                        if (field.Offset >= row.Data.Length)
+                            value = string.Empty;
+                        else if (field.Length + field.Offset > row.Data.Length)
+                            value = row.Data.Substring(field.Offset).Trim();
+                        else
+                            value = row.Data.Substring(field.Offset, field.Length).Trim();
+                        if (!columns.Contains(field.FieldName))
+                        {
+                            DataColumn dcol = dt.Columns.Add(field.FieldName);
+                        }                        
+                        dr[field.FieldName] = value;
+                        //SetProperty(entry, property, value);
+                    }
+                }
+                dt.Rows.Add(dr);
+                //entries.Add(entry);
+            }
+            return dt;
+            //return entries;
         }
 
         protected void SetProperty(object targetObject, PropertyInfo property, object remoteValue)

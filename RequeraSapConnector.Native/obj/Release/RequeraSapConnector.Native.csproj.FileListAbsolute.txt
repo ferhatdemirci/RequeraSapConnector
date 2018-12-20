@@ -1,0 +1,11 @@
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\RequeraSapConnector.Native.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\RequeraSapConnector.Native.pdb
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\RequeraSapConnector.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\sapnco.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\sapnco_utils.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\bin\Release\RequeraSapConnector.pdb
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\obj\Release\RequeraSapConnector.Native.csprojAssemblyReference.cache
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\obj\Release\RequeraSapConnector.Native.csproj.CoreCompileInputs.cache
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\obj\Release\RequeraSapConnector.Native.csproj.CopyComplete
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\obj\Release\RequeraSapConnector.Native.dll
+C:\Projeler\RequeraSapConnector\RequeraSapConnector.Native\obj\Release\RequeraSapConnector.Native.pdb
