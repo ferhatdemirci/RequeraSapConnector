@@ -1,10 +1,10 @@
 # RequeraSapConnector
 This is DotNet SAP Sap connector for Requera BI 
 
-SAP Bağlantı yöneticisi
+SAP Connecting Example
 
 
-#Configurasyon Dosyası aşağıdaki gibi düzenlenecek
+#Configure your SAP connecting on Web.config file
 
 ```xml
 <configuration>
@@ -30,7 +30,7 @@ SAP Bağlantı yöneticisi
 </configuration>
 ```
 
-RFC üzerinden veri alımı
+Get Data from RFC..
 
 ```C#
 using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
@@ -44,7 +44,7 @@ using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
 
                 teslimat = result.GetTable<ZTeslimat>("T_LISTE").ToList();               
                 //DataTable dt = new DataTable();
-                //dt = result.GetTableRFC("T_LISTE"); //Model kullanmadan direk DataTable içerisine alır
+                //dt = result.GetTableRFC("T_LISTE"); //Get Data without Model(Model kullanmadan direk DataTable içerisine alır)
             }
 ```
 
@@ -67,8 +67,11 @@ public class ZTeslimat
     }
 ````
 
-Modelleme için yukarıdaki gibi RFC alan isimleri verilebileceği gibi, Class içerisinde kendi isimlerinize map edebilirsiniz. 
-Örnek:
+Modelleme için yukarıdaki gibi RFC alan isimleri verilebileceği gibi, Class içerisinde kendi isimlerinize map edebilirsiniz.
+
+You can map SAP structure field with database column on model class.
+
+Example / Örnek:
 ```C#
     public class Muhataplar
     {
@@ -83,6 +86,9 @@ Modelleme için yukarıdaki gibi RFC alan isimleri verilebileceği gibi, Class i
     }
 ```
 Direk Tablo'yu almak için aşağıdaki örneği kullanınız.
+
+There's also a shortcut to the RFC_READ_TABLE function.
+You can use it like this:
 
 ```C#
 using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
