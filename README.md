@@ -21,8 +21,8 @@ SAP Connecting Example
     <ClientSettings>
       <DestinationConfiguration>
         <destinations >
-          <add NAME="FED" USER="RFCKullanıcıAdiniz" PASSWD="RFC_Şifresi" CLIENT="001"
-             LANG="EN" ASHOST="SAP_Sunucusu" SYSNR="00" />
+          <add NAME="FED" USER="RFCUserName" PASSWD="RFC_Password" CLIENT="001"
+             LANG="EN" ASHOST="SAP_HostIPorName" SYSNR="00" />
         </destinations>
       </DestinationConfiguration>
     </ClientSettings>
@@ -33,23 +33,23 @@ SAP Connecting Example
 Get Data from RFC..
 
 ```C#
-using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
+using (SapConnection sapConnection = new NativeSapRfcConnection("FEP"))
             {
-                var result = baglanti.ExecuteFunction("ZBDT_SD_GRUP_TESLIMAT_BILGI", new
+                var result = sapConnection.ExecuteFunction("ZBDT_SD_GRUP_TESLIMAT_BILGI", new
                 {
                     I_VBELN_S = "8500016389",
                     I_VBELN_E = "8500016389"
                 });
-                List<ZTeslimat> teslimat = new List<ZTeslimat>();
+                List<ZDelivery> delivery = new List<ZDelivery>();
 
-                teslimat = result.GetTable<ZTeslimat>("T_LISTE").ToList();               
+                teslimat = result.GetTable<ZDelivery>("T_LISTE").ToList();               
                 //DataTable dt = new DataTable();
                 //dt = result.GetTableRFC("T_LISTE"); //Get Data without Model(Model kullanmadan direk DataTable içerisine alır)
             }
 ```
 
 ```C#
-public class ZTeslimat
+public class ZDelivery
     {
         public string WERKS { get; set; }
         public string VBELN { get; set; }
@@ -73,16 +73,16 @@ You can map SAP structure field with database column on model class.
 
 Example / Örnek:
 ```C#
-    public class Muhataplar
+    public class Partners
     {
         [RfcStructureField("MANDT")]
         public int Client { get; set; }
         [RfcStructureField("SPRAS")]
-        public string Dil { get; set; }
+        public string Lang { get; set; }
         [RfcStructureField("PARVW")]
-        public string MuhatapRolu { get; set; }
+        public string PartnerType { get; set; }
         [RfcStructureField("VTEXT")]
-        public string Tanim { get; set; }
+        public string Name { get; set; }
     }
 ```
 Direk Tablo'yu almak için aşağıdaki örneği kullanınız.
@@ -91,9 +91,9 @@ There's also a shortcut to the RFC_READ_TABLE function.
 You can use it like this:
 
 ```C#
-using (SapConnection baglanti = new NativeSapRfcConnection("FEP"))
+using (SapConnection sapConnection = new NativeSapRfcConnection("FEP"))
             {
-                ASPxGridView2.DataSource= conn.ReadTable<Muhataplar>("TPART",null,null,0,500);
+                ASPxGridView2.DataSource= sapConnection.ReadTable<Partners>("TPART",null,null,0,500);
                 ASPxGridView2.DataBind();               
             }
 ```
