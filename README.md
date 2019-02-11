@@ -1,5 +1,5 @@
 # RequeraSapConnector
-This is DotNet SAP Sap connector for Requera BI 
+This is DotNet SAP Sap connector
 
 SAP Connecting Example
 
