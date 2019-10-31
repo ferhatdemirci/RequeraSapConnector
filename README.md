@@ -35,10 +35,10 @@ Get Data from RFC..
 ```C#
 using (SapConnection sapConnection = new NativeSapRfcConnection("FEP"))
             {
-                var result = sapConnection.ExecuteFunction("ZBDT_SD_GRUP_TESLIMAT_BILGI", new
+                var result = sapConnection.ExecuteFunction("ZBDT_SD_SOME_RFC", new
                 {
-                    I_VBELN_S = "8500016389",
-                    I_VBELN_E = "8500016389"
+                    I_VBELN_S = "8500012222",
+                    I_VBELN_E = "8500012333"
                 });
                 List<ZDelivery> delivery = new List<ZDelivery>();
 
